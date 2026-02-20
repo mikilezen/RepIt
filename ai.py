@@ -5,9 +5,10 @@ import time
 date = time.strftime("%Y-%m-%d")
 date_name = time.strftime("%A")
 # from dotenc
+import os
 # The client gets the API key from the environment variable `GEMINI_API_KEY`.
-client = genai.Client(api_key="AIzaSyCvmXguGsTvl2CqsSImrrmKP9qMxpp9PxQ")
-# client = genai.Client(api_key="AIzaSyDlajAvAIJqIuaCBWf_SL3mtbRHCajagF8")
+# client = genai.Client(api_key="AIzaSyCvmXguGsTvl2CqsSImrrmKP9qMxpp9PxQ")
+client = genai.Client(api_key="AIzaSyBRgsYMh-dZknRbE04Xo6gHZA6nesc4ubo")
 
 def SceduleClass(R_number: str, start: str, end: str, case: str = "None"):
     return f"Class scheduled in room {R_number} from {start} to {end}. Reason: {case}"
